@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('chartsExample.directives', []).directive('chart', function() {
+angular.module('ngHighcharts', ['highchartsModule']).directive('chart',['Highcharts', function(Highcharts) {
     return {
         restrict: 'E',
         template: '<div></div>',
@@ -31,4 +31,4 @@ angular.module('chartsExample.directives', []).directive('chart', function() {
         }
     };
 
-});
+}]);
